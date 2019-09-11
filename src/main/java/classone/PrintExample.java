@@ -16,7 +16,17 @@ public class PrintExample {
     System.out.println("Hello World!");
     System.out.print("Hi\t");
     System.out.print("there! \n");
+
+    // concatenation example
     System.out.println("Adding " + 12 + " " + 23);
     System.out.println("Adding " + (12 + 23));
+
+    // variable declaration
+    int age;
+    age = 98;
+    System.out.println("Age is " + age);
+    int ageMonths = 0;
+    ageMonths = age * 12;
+    System.out.println("Age in months " + ageMonths);
   }
 }

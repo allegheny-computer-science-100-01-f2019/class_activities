@@ -5,7 +5,7 @@
 @rem you may not use this file except in compliance with the License.
 @rem You may obtain a copy of the License at
 @rem
-@rem      http://www.apache.org/licenses/LICENSE-2.0
+@rem      https://www.apache.org/licenses/LICENSE-2.0
 @rem
 @rem Unless required by applicable law or agreed to in writing, software
 @rem distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,7 +17,7 @@
 @if "%DEBUG%" == "" @echo off
 @rem ##########################################################################
 @rem
-@rem  project startup script for Windows
+@rem  class_activities-jjumadinova startup script for Windows
 @rem
 @rem ##########################################################################
 
@@ -29,7 +29,7 @@ if "%DIRNAME%" == "" set DIRNAME=.
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%..
 
-@rem Add default JVM options here. You can also use JAVA_OPTS and PROJECT_OPTS to pass JVM options to this script.
+@rem Add default JVM options here. You can also use JAVA_OPTS and CLASS_ACTIVITIES_JJUMADINOVA_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 
 @rem Find java.exe
@@ -79,19 +79,19 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\project.jar
+set CLASSPATH=%APP_HOME%\lib\class_activities-jjumadinova.jar
 
-@rem Execute project
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %PROJECT_OPTS%  -classpath "%CLASSPATH%" classone.PrintExample %CMD_LINE_ARGS%
+@rem Execute class_activities-jjumadinova
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %CLASS_ACTIVITIES_JJUMADINOVA_OPTS%  -classpath "%CLASSPATH%" classone.PrintExample %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell
 if "%ERRORLEVEL%"=="0" goto mainEnd
 
 :fail
-rem Set variable PROJECT_EXIT_CONSOLE if you need the _script_ return code instead of
+rem Set variable CLASS_ACTIVITIES_JJUMADINOVA_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
-if  not "" == "%PROJECT_EXIT_CONSOLE%" exit 1
+if  not "" == "%CLASS_ACTIVITIES_JJUMADINOVA_EXIT_CONSOLE%" exit 1
 exit /b 1
 
 :mainEnd
