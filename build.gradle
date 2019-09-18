@@ -50,6 +50,11 @@ jar {
 apply plugin: 'application'
 mainClassName = 'classone.PrintExample'
 
+// specify that the application will accept input from System.in
+run {
+   standardInput = System.in
+}
+
 // perform checkstyle checking with the "gradle check" command
 apply plugin: 'checkstyle'
 checkstyle.toolVersion = '8.1'

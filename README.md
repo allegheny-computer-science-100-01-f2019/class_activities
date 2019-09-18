@@ -3,22 +3,22 @@
 ## Introduction
 
 Designed for use with [GitHub Classroom](https://classroom.github.com/), this
-repository contains the in-class materials that you will need in Computer Science 100-01. 
+repository contains the in-class materials that you will need in Computer Science 100-01.
 All of the work that you do in class  will count towards your class participation grade.
 
 ## Commands
 
-In this class students will use Gradle and GatorGrader tools to help check and complete assignments. Gradle is a build automation tool that compiles (builds) and runs programs for you so that you do not have to enter multiple commands. Additionally, it can perform extra checks, for example ensuring that your program satisfies the styling guidelines. 
+In this class students will use Gradle and GatorGrader tools to help check and complete assignments. Gradle is a build automation tool that compiles (builds) and runs programs for you so that you do not have to enter multiple commands. Additionally, it can perform extra checks, for example ensuring that your program satisfies the styling guidelines.
 
-GatorGrader is an automated grading tool developed by Allegheny computer science students under the direction of Dr. Kapfhammer. It relies on Gradle and can be used to check the correctness of the assignment completion before submitting it. GatorGrader will be used for all lab and practical assignments. 
+GatorGrader is an automated grading tool developed by Allegheny computer science students under the direction of Dr. Kapfhammer. It relies on Gradle and can be used to check the correctness of the assignment completion before submitting it. GatorGrader will be used for all lab and practical assignments.
 
 ### Using Gradle via Docker
 
-If you are using Docker Desktop you will run a `docker run` command to execute and test your programs. 
+If you are using Docker Desktop you will run a `docker run` command to execute and test your programs.
 First, navigate to your "class_activities" directory.
 To ensure that the `docker run` command will work correctly, you
 should create the cache directory by running the command `mkdir
-$HOME/.dockagator`. 
+$HOME/.dockagator`.
 To enter an "interactive terminal" that will
 allow you to repeatedly run commands within the Docker container, enter the following
 `docker run` command into your terminal.
@@ -38,22 +38,23 @@ should contain the source code as
 provided to a student through GitHub. Additionally, the cache directory should
 not contain anything other than directories and programs created by DockaGator,
 thus ensuring that they are not otherwise overwritten during the completion of
-the assignment. 
+the assignment.
 
 Now you can type `gradle build` to compile your class program and `gradle run` to execute it.
 
 
 ### Using Gradle Directly
-On Windows Home, if you have installed the specified software during lab 01, then you can run 
-the `gradle build` and `gradle run` commands directly in the terminal from your "class_activities" directory.
+On Windows Home, if you have installed the specified software during lab 01, then you can run
+the `gradle build` and `gradle run` or `gradle -q --console plain run` commands directly in the terminal from your "class_activities" directory.
 
 You can also complete several important Java programming tasks by using the
-`gradle` tool. 
+`gradle` tool.
 
 - `gradle clean`: clean the project of all the derived files
 - `gradle check`: check the quality of the code using Checkstyle
 - `gradle build`: create the bytecode from the Java source code
 - `gradle run`: run the Java program in the command-line
+- `gradle -q --console plain run`: run the Java program while suppressing unnecessary gradle output
 - `gradle tasks`: display details about the Gradle system
 
 To run one of these commands, you must be in the main (or "home base") directory
@@ -66,7 +67,7 @@ When the course instructor provides the new material for the in-class activity,
  you can type this command in the main directory for this repository:
 
 ```
-git remote add download git@https://github.com/allegheny-computer-science-100-01-f2019/class_activities.git
+git remote add download git@github.com/allegheny-computer-science-100-01-f2019/class_activities.git
 ```
 
 You should only need to type this command once; typing the command additional

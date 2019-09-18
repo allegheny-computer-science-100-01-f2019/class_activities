@@ -1,5 +1,7 @@
 package classone;
 
+import java.util.Scanner;
+
 /** PrintExample program in Java.
 * This program shows examples of String
 * concatenation and escape sequence usage.
@@ -21,9 +23,15 @@ public class PrintExample {
     System.out.println("Adding " + 12 + " " + 23);
     System.out.println("Adding " + (12 + 23));
 
+    // Age conversion
+    // ask the user for input
+    System.out.println("Enter an age");
+
     // variable declaration
+    Scanner input = new Scanner(System.in);
+
     int age;
-    age = 98;
+    age = input.nextInt();
     System.out.println("Age is " + age);
     int ageMonths = 0;
     ageMonths = age * 12;
